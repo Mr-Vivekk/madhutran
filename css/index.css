@@ -1,0 +1,440 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    
+}
+
+#navbar{
+    display:flex;
+    
+    align-items: center;
+}
+
+/* Navigation bar:logo and img */
+#logo{
+    width: 10%;
+    margin: 0px 5px;;
+}
+#logo img{
+    height: 75px;
+    margin-left: 30px;
+    
+}
+
+/* NAvigation logo text */
+#logotext{
+    
+    font-size: 1.1rem;
+    color: black;
+    display: block;
+    margin: 1px 1px ;
+    padding: 1px 1px;
+    font-size: 1.5rem;
+    font-weight: 550;
+}
+
+/* Navigation bar list styling */
+
+#navbar{
+    background-color: brown;
+    position: relative;
+    
+    
+}
+
+#navbar button{
+    color: black;
+    background-color: brown;
+    font-size: 1rem;
+}
+
+#navbar ul{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+}
+
+#navbar::before{
+    content: "";
+    background-color:brown;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.4rem;
+    font-weight: 550;
+}
+
+#navbar ul li a{
+
+    color: black;
+    text-decoration: none;
+    display: block;
+    margin: 10px 15px;
+    padding: 10px 8px;
+}
+
+#navbar ul li a:hover{
+
+    color: black;
+    background-color:white;
+    border-radius: 16px;
+}
+
+/* HOME SECTION */
+
+#home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 670px;
+    background: image();
+    font-size: 2.5rem;
+   
+}
+
+#home::before{
+    content: "";
+    background: url('../photos/home1.JPG')no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+/* HOME SECTION HEADING */
+
+#home h1{
+    position: relative;
+    color: black;
+    text-align: center;
+    
+}
+
+/* UTILITY CLASSES */
+.hfirst{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    text-decoration: wavy;
+    letter-spacing: 0.5rem;
+}
+
+/* ABOUT SECTION */
+#about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: brown
+}
+
+#about h1{
+    position: relative;
+    color: black;
+    padding-bottom: 40px;
+    padding-top: 20px;
+    font-size: 4rem;
+    text-decoration: wavy;
+}
+
+#about p{
+    font-weight: bold;
+    color:black;
+    padding: 30px 250px;
+    text-align: center;
+}
+
+/* EVENT SECTION */
+#eventsdiv{
+    display: flex;
+
+}
+
+#events{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: brown;
+}
+#events h1{
+    position: relative;
+    color: black;
+    padding-bottom: 40px;
+    padding-top: 20px;
+    font-size: 4rem;
+}
+
+ #eventsinside h2{
+    display: flex;
+    text-decoration: underline;
+    justify-content: center;
+    align-items: center;
+} 
+
+#eventsimage{
+    display: flex;
+}
+#events img{
+    width: 100%;
+    height: 600px;
+}
+
+.hthird{
+    font-size: 3.2rem;
+    font-weight: bold;
+    padding: 2px 10px;
+    text-decoration: underline;
+}
+
+#eventsinside .hthird1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 35px 15px;
+    text-decoration: underline;
+}
+
+#events p{
+    border: 2px solid black;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+}
+
+/* CONTACT PERSONS SECTION */
+
+#contact{
+    background-color: burlywood;
+}
+
+#contact h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: black;
+    padding-bottom: 40px;
+    padding-top: 20px;
+    font-size: 4rem;
+}
+
+#contactlist1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 20px 2px;
+    
+}
+
+#contactlist2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+#contact1{
+    background-color: brown;
+    
+    margin: 10px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+    padding: 20px 15px;
+    border-radius: 30px;
+}
+#contact2{
+    background-color: brown;
+    margin: 10px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+    padding: 20px 15px;
+    border-radius: 30px;
+}
+#contact3{
+    background-color: brown;
+    margin: 10px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+    padding: 20px 15px;
+    border-radius: 30px;
+}
+#contact4{
+    background-color: brown;
+    margin: 10px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+    padding: 20px 15px;
+    border-radius: 30px;
+}
+#contact5{
+    background-color: brown;
+    margin: 10px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+    padding: 20px 15px;
+    border-radius: 30px;
+}
+#contact6{
+    background-color: brown;
+    margin: 10px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+    padding: 20px 15px;
+    border-radius: 30px;
+}
+
+#contact img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 30px;
+}
+#contactlist1 h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contactlist2 h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contactlist1 p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+#contactlist2 p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+#contactlist1 img{
+    height: 310px;
+    width: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contactlist2 img{
+    height: 310px;
+    width: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Photos section */
+
+#photos{
+    background-color: brown;
+}
+#photos h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: black;
+    padding-bottom: 40px;
+    padding-top: 20px;
+    font-size: 4rem;
+}
+.w3-content w3-display-container{
+    padding: 2px 2px;
+}
+
+
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+
+
+/* Aarti and stuti Section */
+#outside{
+    background-color: brown;
+    display: flex;
+}
+
+#aarti h1{
+    background-color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: black;
+    padding-bottom: 40px;
+    padding-top: 20px;
+    font-size: 4rem;
+}
+
+#dadaaarti{
+    padding: 20px 30px;
+    margin: 10px 30px;
+}
+
+#stuti{
+    padding: 20px 30px;
+    margin: 10px 30px;
+}
+
+
+/* FOOTER SECTION */
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer{
+    background: black;
+    color: white;
+    padding: 25px 20px;
+}
+
+
+
+
+    
+
+
+
+
